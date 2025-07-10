@@ -1,0 +1,227 @@
+html {
+  scroll-behavior: smooth;
+}
+
+#placas, #graficas, #ram, #almacenamiento, #historia, #contacto {
+  scroll-margin-top: 100px; 
+}
+
+* {
+  color: #ffffff !important;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #0f0f0f, #1b1b1b);
+}
+
+.hero {
+  position: relative;
+  background: url("IMG/hero.jpg") center/cover no-repeat;
+  padding: 120px 20px;
+  scroll-margin-top: 80px; 
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5); 
+}
+
+.hero .container {
+  position: relative; 
+  z-index: 1;
+}
+
+section {
+  scroll-margin-top: 80px;
+}
+
+h2, h3 {
+  color: #ff3c5f;
+  text-shadow: 0 0 8px #ff0033;
+  font-weight: 700;
+  font-family: 'Poppins', sans-serif;
+}
+
+.card {
+  background: radial-gradient(circle at top left, #1e1e1e, #121212);
+  border: 2px solid #ff0033;
+  border-radius: 14px;
+  box-shadow: 0 0 12px rgba(255, 0, 51, 0.25);
+  transition: all 0.3s ease;
+  color: #ffffff;
+}
+
+.card:hover {
+  transform: translateY(-5px) scale(1.02);
+  box-shadow: 0 0 20px rgba(255, 0, 51, 0.6);
+}
+
+.card-title {
+  font-weight: 700;
+  font-size: 1.2rem;
+  color: #ff4c66 !important;
+  text-shadow: 0 0 5px #000000;
+  font-family: 'Poppins', sans-serif;
+}
+
+.card-text {
+  font-size: 0.95rem;
+}
+
+.card-img-top {
+  height: 180px;
+  object-fit: cover;
+  border-bottom: 1px solid #ff0033;
+}
+
+#placas, #graficas, #ram, #almacenamiento {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  border-top: 2px solid #ff0033;
+}
+
+#placas {
+  background-color: #1a1a1a;
+}
+
+#graficas {
+  background-color: #121212;
+}
+
+#ram {
+  background-color: #1a1a1a;
+}
+
+#almacenamiento {
+  background-color: #121212;
+}
+
+#contacto, #historia {
+  margin-top: 80px; 
+  padding-top: 60px;
+  padding-bottom: 60px;
+  border-top: 2px solid #ff0033; 
+}
+
+form label {
+  color: #ff4c66 !important;
+}
+
+form .form-control {
+  background-color: #1b1b1b;
+  border: 1px solid #ff0033;
+  color: #ffffff;
+}
+
+form .form-control:focus {
+  background-color: #1b1b1b; 
+  color: #ffffff;            
+  box-shadow: 0 0 8px #ff0033; 
+  border-color: #ff0033;
+}
+
+.btn-danger {
+  background-color: #ff0033;
+  border: none;
+}
+
+.btn-danger:hover {
+  background-color: #ff4c66;
+}
+
+footer .social-links a i {
+  font-size: 1.2rem;
+  transition: color 0.3s;
+}
+
+footer .social-links a:hover i {
+  color: #ff4c66;
+  text-shadow: 0 0 8px #ff0033;
+}
+
+
+/* ================================================
+   ✅ TABLET: min-width: 768px and max-width: 991.98px
+   ================================================ */
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .hero {
+    padding: 180px 40px;
+    text-align: center;
+  }
+
+  .hero h1 {
+    font-size: 3rem;
+  }
+
+  .hero p {
+    font-size: 1.2rem;
+  }
+
+  .card-title {
+    font-size: 1.1rem;
+  }
+
+  .card-text {
+    font-size: 0.9rem;
+  }
+
+  section {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  footer p {
+    font-size: 0.9rem;
+  }
+}
+
+/* ================================================
+   ✅ DESKTOP: min-width: 992px
+   ================================================ */
+@media (min-width: 992px) {
+  .hero {
+    padding: 220px 60px;
+    text-align: left;
+  }
+
+  .hero h1 {
+    font-size: 4rem;
+  }
+
+  .hero p {
+    font-size: 1.4rem;
+  }
+
+  .card-title {
+    font-size: 1.3rem;
+  }
+
+  .card-text {
+    font-size: 1rem;
+  }
+
+  .card-img-top {
+    height: 200px;
+  }
+
+  section {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  footer p {
+    font-size: 1rem;
+  }
+
+  .navbar-brand {
+    font-size: 2rem;
+  }
+
+  .nav-link {
+    font-size: 1.1rem;
+    margin: 0 1rem;
+  }
+}
